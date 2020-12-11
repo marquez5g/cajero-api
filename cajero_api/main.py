@@ -33,7 +33,7 @@ async def auth_user(user_in: UserIn):
     return  {"Autenticado": True}
 
 
-@api.get("/user/balance/{username}")
+@api.get("https://cajero-app-5g.herokuapp.com/user/balance/{username}")
 async def get_balance(username: str):
 
     user_in_db = get_user(username)
